@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor SVG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div id="container">   
+        <nav id="tools">
+            <div class="tool-group">
+               <p>Option:</p>
+                <button id="btnCancel">Cancel</button>
+                <button id="btnSave">Salvare desen curent</button>
+                <button id="btnLoad">Reincarcare desen salvat</button>
+            </div> 
+            <div class="tool-group">
+              <p>Edit:</p>
+              <div>
+                <label for="stroke-width">Stroke Width:</label>
+                <input type="number" id="stroke-width" name="stroke-width" value="3">
+            </div>
+            <div>
+              <input type="color" id="stroke" name="stroke" value="#000000">
+              <label for="stroke">Stroke</label>
+            </div>
+            <div>
+              <input type="color" id="fill" name="fill" value="#FFFFFF">
+              <label for="fill">Fill</label>
+            </div>
+            </div>
+            <div class="tool-group">
+              <p>Insert:</p>
+              <button id="btnLine">Line</button>
+              <button id="btnCircle">Circle</button>
+              <button id="btnRect">Rectangle</button>
+            </div>
+            <div class="tool-group">
+              <p>Export:</p>
+              <button id="JPEG">Export JPEG</button>
+              <button id="PNG">Export PNG</button>
+              <button id="SVG">Save SVG</button>
+            </div>
+        </nav>
+          <svg id="editor">  
+            <g id="elemente"></g> 
+          </svg>
+    </div>  
+
+</body>
+</html>

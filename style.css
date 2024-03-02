@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+}
+
+#editor {
+    align-self: center;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    border: 2px solid #2e1717;
+}
+
+#tools {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tools button,
+#tools input,
+#tools label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 50px;
+}
+
